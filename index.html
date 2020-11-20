@@ -1,0 +1,273 @@
+  <!DOCTYPE html>
+<html >
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+          * {box-sizing: border-box}
+          body {font-family: Verdana, sans-serif; margin:0}
+          .mySlides {display: none}
+          img {vertical-align: middle;}
+
+
+          /* On smaller screens, decrease text size */
+          @media only screen and (max-width: 300px) {
+            .prev, .next,.text {font-size: 11px}
+          }
+        </style>
+      <title>Bestara | Official Website</title>
+      <link rel="stylesheet" href="stylesheet.css">
+   </head>
+   <body>
+      <div class="top-wrap">
+        <div class="top-nav" id="topnav">
+          <div class="nav-menu">
+
+            <a class="nav-home" href="#home">Home</a>
+            <a class="nav-shop" href="#">Shop</a>
+            <a class="nav-cart" href="#">Cart</a>
+            <a class="nav-contact" href="#">About</a>
+
+          </div>
+
+          <a class="login" href="#">Log in</a>
+          <a class="signup" href="#">Sign up</a>
+
+        </div>
+
+         <div class="slideshow-container">
+
+            <div class="mySlides fade">
+               <div class="numbertext">1 / 5</div>
+               <img src="img\1Car_Slide.png" style="width:100%">
+               <div class="text">Discover More on Bestara TEEN</div>
+            </div>
+            <div class="mySlides fade">
+               <div class="numbertext">2 / 5</div>
+               <img src="img\2Car_Slide.png" style="width:100%">
+               <div class="text">Discover More on Bestara TEEN</div>
+            </div>
+            <div class="mySlides fade">
+               <div class="numbertext">3 / 5</div>
+               <img src="img\3Car_Slide.png" style="width:100%">
+               <div class="text">Discover More on Bestara Watch</div>
+            </div>
+            <div class="mySlides fade">
+               <div class="numbertext">4 / 5</div>
+               <img src="img\4Car_Slide.png" style="width:100%">
+               <div class="text">Discover More on Bestara Jewelry</div>
+            </div>
+            <div class="mySlides fade">
+               <div class="numbertext">5 / 5</div>
+               <img src="img\5Car_Slide.png" style="width:100%">
+               <div class="text">Discover More on Bestara Beauty</div>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+         </div>
+         <br>
+         <!-- The dots/circles -->
+         <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+         </div>
+
+
+         <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            }
+
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+              var currentScrollPos = window.pageYOffset;
+              if (prevScrollpos > currentScrollPos) {
+                document.getElementById("topnav").style.top = "0";
+              } else {
+                document.getElementById("topnav").style.top = "-75px";
+              }
+              prevScrollpos = currentScrollPos;
+              }
+         </script>
+
+      </div>
+      <div class="highlight-wrap">
+        <h1>Highlight</h1>
+        <div class="high-item">
+          <div class="c4">
+            <div class="container">
+              <a class="img-links" href="#">
+              <img class="c4-image" src="img\RB_Sneaker2.png">
+              <div class="c4-desc">
+                <span class="asgalt">BESTARA</span> Teen Sneakers <br>
+                      <span class="felix">US$ 850</span>
+              </div>
+            </a>
+            </div>
+          </div>
+
+          <div class="c4">
+            <div class="container">
+              <a class="img-links" href="#">
+              <img class="c4-image" src="img\RB_Satchel-Bag2.png">
+              <div class="c4-desc">
+                <span class="asgalt">BESTARA</span> Satchel Bag <br>
+                with leather tassell <br>
+                      <span class="felix">US$ 1500</span>
+              </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="c4">
+            <div class="container">
+              <a class="img-links" href="#">
+              <img class="c4-image" src="img\RB_Spiris-Perfume2.png">
+              <div class="c4-desc">
+                <span class="asgalt">BESTARA</span> Bluquid Spiris <br>
+                    6.7 oz / 200ml <br>
+                        <span class="felix">US$ 150</span>
+              </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="c4">
+            <div class="container">
+              <a class="img-links" href="#">
+              <img class="c4-image" src="img\RB_Hoodie-Male2.png">
+              <div class="c4-desc">
+                <span class="asgalt">BESTARA</span> Teen Male Hoodie <br>
+                        <span class="felix">US$ 250</span>
+              </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="c4">
+            <div class="container">
+              <a class="img-links" href="#">
+              <img class="c4-image" src="img\RB_Chrysanthemum-Cross2.png">
+              <div class="c4-desc">
+                <span class="asgalt">BESTARA</span> Jewelry <br>
+              Chrysanthemum Cross <br>
+                    <span class="felix">US$ 900</span>
+              </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="c4">
+            <div class="container">
+              <a class="img-links" href="#">
+              <img class="c4-image" src="img\RB_Hoodie-Female2.png">
+              <div class="c4-desc">
+                <span class="asgalt">BESTARA</span> Teen Female Hoodie <br>
+                        <span class="felix">US$ 250</span>
+              </div>
+            </a>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+
+      <div class="exclusive-wrap">
+        <h1>Exclusive Item</h1>
+        <div class="exclusive-item">
+        <div class="c4">
+          <div class="container">
+            <a class="img-exlinks" href="#">
+            <img class="c4-image" src="img\RB_Golden-Orchid2.png">
+            <div class="c4-desc">
+              <span class="asgalt">BESTARA</span> Jewelry <br>
+            Golden Orchid <br>
+                  <span class="felix">US$ 2500</span>
+            </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="c4">
+          <div class="container">
+            <a class="img-exlinks" href="#">
+            <img class="c4-image" src="img\RB_Rose-Pink-Engagement2.png">
+            <div class="c4-desc">
+                <span class="asgalt">BESTARA</span> Jewelry <br>
+                  Rose Pink Diamond 0.90 Carat <br>
+                  Engagement Ring <br>
+                <span class="felix">US$ 10,000</span>
+            </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="c4">
+          <div class="container">
+            <a class="img-exlinks" href="#">
+            <img class="c4-image" src="img\RB_Golden-Star-Necklace2.png">
+            <div class="c4-desc">
+              <span class="asgalt">BESTARA</span> Jewelry <br>
+            Chrysanthemum Cross <br>
+                  <span class="felix">US$ 900</span>
+            </div>
+            </a>
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="women-wrap">
+        <div class="women-title">
+          <h1>Women's Collection</h1>
+        </div>
+        <img src="img\Woman's_Collection.png" alt="Woman's_Collection">
+      </div>
+      <div class="men-wrap">
+        <div class="men-title">
+          <h1>Men's Collection</h1>
+        </div>
+        <img src="img\Men_Collection.png">
+      </div>
+      <div class="teen-wrap">
+        <img src="img\Teen's_Collection.png">
+      </div>
+      <div class="kid-wrap">
+        <img src="img\Kid's_Collection.png">
+      </div>
+   </body>
+</html>
